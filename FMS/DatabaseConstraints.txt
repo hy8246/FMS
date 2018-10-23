@@ -1,0 +1,30 @@
+Valid Database Entries:
+
+Location
+	State
+		Depends on country, if applicable
+Employee
+	AuthType
+		U - Standard User
+		A - Admin
+		S - Super User
+Room
+	Category
+		C - Conference (Large meetings)
+		M - Meeting (Scrum, small meetings)
+		T - Training
+		L - Lab (POS lab, Pivotal lab)
+		R - Recreation
+Reservation
+	Start/End Time
+		15 Minute intervals
+		8am - 6pm
+	Rating
+		1-5
+	Status
+		P - Pending
+		A - Accepted
+		D - Denied
+		C - Cancelled
+		N - No show
+		F - Finished

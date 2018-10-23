@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	">
+	
+	<context:annotation-config/>
+    
+    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="username" value="system" />
+        <property name="password" value="syntel123$" />
+        <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+    </bean>
+    
+    <bean id="jtemp" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="ds" />
+    </bean>
+    
+    <!-- ~~~~~~~~~~ Data Type Beans ~~~~~~~~~~ -->
+    
+    <bean id="employee" class="com.syntelinc.fms.logic.Employee" scope="prototype"></bean>
+    <bean id="feature" class="com.syntelinc.fms.logic.Feature" scope="prototype"></bean>
+    <bean id="feature-set" class="com.syntelinc.fms.logic.FeatureSet" scope="prototype"></bean>
+    <bean id="location" class="com.syntelinc.fms.logic.Location" scope="prototype"></bean>
+    <bean id="reservation" class="com.syntelinc.fms.logic.Reservation" scope="prototype"></bean>
+    <bean id="room" class="com.syntelinc.fms.logic.Room" scope="prototype"></bean>
+    
+    <!-- ~~~~~~~~~~ Reporting Beans ~~~~~~~~~~ -->
+	<bean id="usage-report" class="com.syntelinc.fms.logic.reports.UsageReport" scope="prototype">
+		<property name="period" value="today" />
+	</bean>
+</beans>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10742" started-at="2018-03-18T17:16:50Z" finished-at="2018-03-18T17:17:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10742" started-at="2018-03-18T17:16:50Z" finished-at="2018-03-18T17:17:00Z">
+      <class name="tests.SequenceQueryTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="12" started-at="2018-03-18T17:16:50Z" finished-at="2018-03-18T17:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="548" started-at="2018-03-18T17:16:50Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-03-18T17:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-03-18T17:16:50Z" finished-at="2018-03-18T17:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="startTests()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="startTests" is-config="true" duration-ms="87" started-at="2018-03-18T17:16:50Z" finished-at="2018-03-18T17:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTests -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2018-03-18T17:16:51Z" finished-at="2018-03-18T17:16:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="beforeMethod" is-config="true" duration-ms="93" started-at="2018-03-18T17:16:51Z" finished-at="2018-03-18T17:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="openBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="openBook" is-config="true" duration-ms="42" started-at="2018-03-18T17:16:51Z" finished-at="2018-03-18T17:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBook -->
+        <test-method status="FAIL" signature="getNextFeatureTest(int)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="getNextFeatureTest" duration-ms="591" started-at="2018-03-18T17:16:51Z" data-provider="getNextFeatureData" finished-at="2018-03-18T17:16:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.WriteToExcel.writeExcelData(WriteToExcel.java:22)
+at tests.SequenceQueryTest.getNextFeatureTest(SequenceQueryTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:230)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:242)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:576)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNextFeatureTest -->
+        <test-method status="PASS" signature="closeBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="closeBook" is-config="true" duration-ms="180" started-at="2018-03-18T17:16:52Z" finished-at="2018-03-18T17:16:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="afterMethod" is-config="true" duration-ms="2500" started-at="2018-03-18T17:16:52Z" finished-at="2018-03-18T17:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2018-03-18T17:16:54Z" finished-at="2018-03-18T17:16:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2018-03-18T17:16:54Z" finished-at="2018-03-18T17:16:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="beforeMethod" is-config="true" duration-ms="71" started-at="2018-03-18T17:16:54Z" finished-at="2018-03-18T17:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="openBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="openBook" is-config="true" duration-ms="36" started-at="2018-03-18T17:16:54Z" finished-at="2018-03-18T17:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBook -->
+        <test-method status="FAIL" signature="getNextFeatureTest(int)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="getNextFeatureTest" duration-ms="43" started-at="2018-03-18T17:16:54Z" data-provider="getNextFeatureData" finished-at="2018-03-18T17:16:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.WriteToExcel.writeExcelData(WriteToExcel.java:22)
+at tests.SequenceQueryTest.getNextFeatureTest(SequenceQueryTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:230)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:242)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:576)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNextFeatureTest -->
+        <test-method status="PASS" signature="closeBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="closeBook" is-config="true" duration-ms="71" started-at="2018-03-18T17:16:54Z" finished-at="2018-03-18T17:16:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="afterMethod" is-config="true" duration-ms="2030" started-at="2018-03-18T17:16:55Z" finished-at="2018-03-18T17:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2018-03-18T17:16:57Z" finished-at="2018-03-18T17:16:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2018-03-18T17:16:57Z" finished-at="2018-03-18T17:16:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="beforeMethod" is-config="true" duration-ms="57" started-at="2018-03-18T17:16:57Z" finished-at="2018-03-18T17:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="openBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="openBook" is-config="true" duration-ms="35" started-at="2018-03-18T17:16:57Z" finished-at="2018-03-18T17:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBook -->
+        <test-method status="FAIL" signature="getNextFeatureTest(int)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="getNextFeatureTest" duration-ms="48" started-at="2018-03-18T17:16:57Z" data-provider="getNextFeatureData" finished-at="2018-03-18T17:16:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.WriteToExcel.writeExcelData(WriteToExcel.java:22)
+at tests.SequenceQueryTest.getNextFeatureTest(SequenceQueryTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:230)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:242)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:576)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNextFeatureTest -->
+        <test-method status="PASS" signature="closeBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="closeBook" is-config="true" duration-ms="59" started-at="2018-03-18T17:16:57Z" finished-at="2018-03-18T17:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="afterMethod" is-config="true" duration-ms="1767" started-at="2018-03-18T17:16:57Z" finished-at="2018-03-18T17:16:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2018-03-18T17:16:59Z" finished-at="2018-03-18T17:16:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2018-03-18T17:16:59Z" finished-at="2018-03-18T17:16:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="beforeMethod" is-config="true" duration-ms="67" started-at="2018-03-18T17:16:59Z" finished-at="2018-03-18T17:16:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="openBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="openBook" is-config="true" duration-ms="29" started-at="2018-03-18T17:16:59Z" finished-at="2018-03-18T17:16:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBook -->
+        <test-method status="FAIL" signature="getNextFeatureTest(int)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="getNextFeatureTest" duration-ms="40" started-at="2018-03-18T17:16:59Z" data-provider="getNextFeatureData" finished-at="2018-03-18T17:16:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.WriteToExcel.writeExcelData(WriteToExcel.java:22)
+at tests.SequenceQueryTest.getNextFeatureTest(SequenceQueryTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:230)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:242)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:576)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNextFeatureTest -->
+        <test-method status="PASS" signature="closeBook()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="closeBook" is-config="true" duration-ms="71" started-at="2018-03-18T17:16:59Z" finished-at="2018-03-18T17:16:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="afterMethod" is-config="true" duration-ms="1642" started-at="2018-03-18T17:16:59Z" finished-at="2018-03-18T17:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2018-03-18T17:17:00Z" finished-at="2018-03-18T17:17:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SequenceQueryTest.getNextFeatureTest(int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:tests.SequenceQueryTest@b3d7190]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2018-03-18T17:17:00Z" finished-at="2018-03-18T17:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- tests.SequenceQueryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
